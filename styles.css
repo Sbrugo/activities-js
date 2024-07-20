@@ -1,0 +1,79 @@
+:root{
+    --primary: #1976d2;
+    --light-primary: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #363949;
+    --light-danger: #fecdd3;
+    --light-warning: #fff2c6;
+    --light-success: #bbf7d0;
+    --light: #f0f8ff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark);
+}
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+li{
+    list-style: none;
+}
+
+body.dark{
+    --light: #25252c;
+    --dark: #fbfbfb;
+}
+
+.nav-center{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--light);
+    padding: 1rem 0;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-center h4{
+    color: var(--primary);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container h2{
+    padding: .5em;
+    border-radius: 30px;
+    border: 2px solid ivory;
+}
+
+button{
+    font-size: inherit;
+    padding: .5em;
+    border: 2px solid ivory;
+    border-radius: 25px;
+    margin-top: 4rem;
+    background-color: transparent;
+}
